@@ -34,3 +34,32 @@
     padding-left:100px;
 }
 
+.bookText {
+    page-break-inside: avoid; /* Prevent page breaks within content */
+ }
+ 
+ @media print {
+    .page-break { page-break-before: always; } /* Use this class for manual breaks */
+ }
+ 
+ .bookContainer {
+   /* Ensure the content expands fully */
+   width: 100%;
+}
+
+.bookText {
+   /* Prevent page break inside elements, especially large sections */
+   page-break-inside: avoid;
+}
+
+/* Add manual page breaks where necessary */
+.page-break {
+   page-break-before: always;
+}
+
+@media print {
+   .bookText {
+      page-break-after: auto;
+      overflow: visible;
+   }
+}

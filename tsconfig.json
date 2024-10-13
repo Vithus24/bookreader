@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Header.tsx", "src/components/BookCard.tsx", "src/components/SideBar.tsx", "src/app/book/[id]/page.tsx", "src/app/page.tsx", "src/app/layout.tsx"],
   "exclude": ["node_modules"]
 }
